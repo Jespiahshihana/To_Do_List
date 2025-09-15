@@ -44,7 +44,7 @@ Upload to GitHub Pages for free hosting.
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="todo-container">
@@ -61,82 +61,104 @@ Upload to GitHub Pages for free hosting.
 ```
 ### CSS
 ```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #975c86 0%, #742952 100%);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .todo-container {
-  background: #fff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-  width: 350px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
   color: #333;
 }
 
 .input-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 #taskInput {
-  width: 70%;
-  padding: 8px;
+  flex: 1;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 #addBtn {
-  padding: 8px 12px;
-  background: #28a745;
+  padding: 10px 15px;
+  background: #9e358e;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 #addBtn:hover {
-  background: #218838;
+  background: #de70c1;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 li {
-  padding: 10px;
+  padding: 12px;
   background: #f9f9f9;
-  margin-bottom: 8px;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
 }
 
 li.completed {
   text-decoration: line-through;
   color: gray;
+  background: #e8e8e8;
 }
 
 button.delete {
-  background: red;
+  background: #4b183c;
   border: none;
   color: white;
   padding: 5px 8px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+button.delete:hover {
+  background: #7e3570;
 }
 
 ```
@@ -176,6 +198,7 @@ function addTask() {
 ```
 
 ## OUTPUT
+<img width="1689" height="794" alt="image" src="https://github.com/user-attachments/assets/ffcdf760-f7f4-4cf4-bac5-b06b03d83ebe" />
 
 
 ## RESULT
